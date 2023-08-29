@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const wordFinder = require('./words')
+const PORT = process.env.PORT || 3500
 
 app.use(cors())
 
@@ -23,6 +24,4 @@ app.post('/words', (req, res) => {
     res.send(result)
 })
 
-const hostname = '192.168.1.10'
-
-app.listen(8001, hostname)
+app.listen(3500, () => console.log(`Server running on port ${PORT}`))

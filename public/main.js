@@ -4,7 +4,7 @@ const lengthElem = document.getElementById('length')
 const resultElem = document.getElementById('result')
 
 button.addEventListener('click', () => {
-    fetch('http://192.168.1.10:8001/words', {
+    fetch('https://words.com/words', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

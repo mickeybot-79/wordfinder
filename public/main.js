@@ -4,7 +4,7 @@ const lengthElem = document.getElementById('length')
 const resultElem = document.getElementById('result')
 
 button.addEventListener('click', () => {
-    fetch('https://words.com/words', {
+    fetch('https://wordfinder-wyhs.onrender.com/words', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

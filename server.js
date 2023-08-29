@@ -24,4 +24,4 @@ app.post('/words', (req, res) => {
     res.send(result)
 })
 
-app.listen(3500, () => console.log(`Server running on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`))

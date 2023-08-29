@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#canvas {
+    display: grid;
+    gap: 20px;
+    place-items: center;
+    margin-top: 150px;
+}
+
+label {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+}
+
+#submit {
+    width: 300px;
+    height: 75px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#result {
+    width: 700px;
+    display: grid;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    gap: 5px;
+}
+
+#result p {
+    place-self: center;
+}
+
+#words {
+    width: 700px;
+    columns: 50px 3;
+    -webkit-columns: 50px 3;
+}

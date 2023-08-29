@@ -15,9 +15,8 @@ const wordFinder = (input, length) => {
             } else {
                 const amountInCurrentWord = currentWord.split('').filter(letter => letter === currentLetter).length
                 const amountInInput = input.split('').filter(letter => letter === currentLetter).length
-                if (amountInCurrentWord > amountInInput) {
-                    solutionArray.push(currentWord)
-                }
+                if (amountInCurrentWord > amountInInput) solutionArray.push(currentWord)
+            }
         }
     }
     return solutionArray

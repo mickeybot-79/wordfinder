@@ -23,9 +23,7 @@ button.addEventListener('click', () => {
                 resultElem.innerHTML = `<p>1 palabra encontrada:</p><p>1. ${response[0].toUpperCase()}</p>`
             } else {
                 const wordList = []
-                response.forEach(word => {
-                    wordList.push(`${response.indexOf(word) + 1}. ${word.toUpperCase()}\n`)
-                });
+                response.forEach(word => wordList.push(`${response.indexOf(word) + 1}. ${word.toUpperCase()}\n`))
                 resultElem.innerHTML = `<p>${response.length} palabras encontradas:</p><p id="words">${wordList.join('<br>')}</p>`
             }
         })

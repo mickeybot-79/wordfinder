@@ -9,4 +9,4 @@ La idea es encontrar palabras en idioma español que contengan la cantidad total
 
 La página consultará una lista de más de 636000 palabras en idioma español, y devolverá solamente aquellas que coincidan con este criterio.
 
-El propósito de esto es hacer trampa en el juego "Words of Wonders".
+El objetivo es superar el juego "Words of Wonders".

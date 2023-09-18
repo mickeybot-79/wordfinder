@@ -19,7 +19,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.post('/words', (req, res) => {
-    if (req.headers['accept-language'] === 'EN, en-US') req.headers['accept-language'] = 'EN'
+    // if (req.headers['accept-language'] === 'EN, en-US') req.headers['accept-language'] = 'EN'
     console.log(req.headers['accept-language'])
     const { input, length } = req.body
     const result = wordFinder(input.toLowerCase(), length)

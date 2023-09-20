@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Encuentra Palabras</title>
+    <title>Document</title>
 </head>
 <body>
     <div id="canvas">
-        <label for="letters">Letras:</label>
-        <input type="text" id="letters">
-        <label for="length">Cantidad:</label>
-        <input type="text" id="length">
-        <button type="button" id="submit">Encontrar Palabras</button>
-        <p id="result"></p>
+        <h1 id="title">Word Finder</h1>
+        <div id="form-result">
+            <div id="form">
+                <label for="language" id="language-label">Language:</label>
+                <select name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="spanish">Español</option>
+                    <option value="french">Français</option>
+                    <option value="italian">Italiano</option>
+                    <option value="portuguese">Português</option>
+                </select>
+                <label for="letters" id="letters-label">Letters:</label>
+                <input type="text" id="letters">
+                <label for="length" id="length-label">Length:</label>
+                <input type="text" id="length">
+                <div id="buttons">
+                    <button type="button" id="submit">Send</button>
+                    <button type="button" id="clear">Clear</button>
+                </div>
+            </div>
+            <p id="result"></p>
+        </div>
     </div>
     <script src="/main.js"></script>
 </body>

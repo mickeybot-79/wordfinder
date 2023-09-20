@@ -4,13 +4,43 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(270deg, rgb(43, 131, 186), rgb(62, 133, 62));
+}
+
+#title {
+    place-self: center;
+    margin-bottom: 50px;
+    font-size: 80px;
+    font-weight: 900;
+    color: rgb(183, 50, 163);
+    white-space: nowrap;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 #canvas {
     display: grid;
+    place-items: start;
+}
+
+#form-result {
+    display: flex;
+    gap: 50px;
+}
+
+#form {
+    margin-left: 200px;
+    display: grid;
     gap: 20px;
     place-items: center;
-    margin-top: 150px;
+    max-height: 300px;
+}
+
+#language {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(192, 171, 171);
 }
 
 label {
@@ -19,12 +49,23 @@ label {
 }
 
 input {
-    width: 400px;
-    height: 30px;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
 }
 
-#submit {
+#buttons {
+    display: flex;
     width: 300px;
+    height: 75px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    gap: 40px;
+}
+
+button {
+    width: 150px;
     height: 75px;
     border-radius: 10px;
     font-size: 20px;
@@ -32,20 +73,24 @@ input {
 }
 
 #result {
-    width: 700px;
+    width: 1000px;
     display: grid;
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
     gap: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #result p {
     place-self: center;
+    margin-top: 0;
+    width: 1000px;
 }
 
 #words {
     width: 700px;
-    columns: 50px 3;
-    -webkit-columns: 50px 3;
+    columns: 50px 5;
+    -webkit-columns: 50px 5;
 }

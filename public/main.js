@@ -64,7 +64,7 @@ languageElem.addEventListener('input', (e) => {
 })
 
 submit.addEventListener('click', () => {
-    fetch('http://192.168.1.10:8001/words', {
+    fetch('https://wordfinder-wyhs.onrender.com/words', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

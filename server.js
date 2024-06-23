@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.post('/words', (req, res) => {
     const { input, length, language } = req.body
-    console.log(input, length, language)
+    //console.log(input, length, language)
     const result = wordFinder(input.toLowerCase(), length, language)
     res.send(result)
 })

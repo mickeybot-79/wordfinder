@@ -13,7 +13,7 @@ var oneWord = 'word found'
 var manyWords = 'words found'
 
 languageElem.addEventListener('input', (e) => {
-    console.log(e.target.value)
+    //console.log(e.target.value)
     switch (e.target.value) {
         case 'spanish':
             languageLabel.innerHTML = 'Idioma:'

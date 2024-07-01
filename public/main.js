@@ -8,9 +8,6 @@ const lengthElem = document.getElementById('length')
 const lettersLabel = document.getElementById('letters-label')
 const lengthLabel = document.getElementById('length-label')
 const resultElem = document.getElementById('result')
-//var noWords = 'No words'
-//var oneWord = 'word found'
-//var manyWords = 'words found'
 
 languageElem.addEventListener('input', (e) => {
     //console.log(e.target.value)

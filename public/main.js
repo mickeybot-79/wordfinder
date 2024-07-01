@@ -8,6 +8,9 @@ const lengthElem = document.getElementById('length')
 const lettersLabel = document.getElementById('letters-label')
 const lengthLabel = document.getElementById('length-label')
 const resultElem = document.getElementById('result')
+var noWords = 'No words'
+var oneWord = 'word found'
+var manyWords = 'words found'
 
 languageElem.addEventListener('input', (e) => {
     //console.log(e.target.value)
@@ -76,15 +79,15 @@ submit.addEventListener('click', () => {
         .then(response => response.json())
         .then(response => {
             if (response.length === 0) {
-                resultElem.innerHTML = '<p>No words</p>'
+                resultElem.innerHTML = `<p>${noWords}</p>`
             } else if (response.length === 1) {
-                resultElem.innerHTML = `<p>1 word found:</p><p>1. ${response[0].toUpperCase()}</p>`
+                resultElem.innerHTML = `<p>1 ${oneWord}:</p><p>1. ${response[0].toUpperCase()}</p>`
             } else {
                 const wordList = []
                 response.forEach(word => {
                     wordList.push(`${word.toUpperCase()}\n`)
                 });
-                resultElem.innerHTML = `<p>${response.length} words found:</p><p id="words">${wordList.join('<br>')}</p>`
+                resultElem.innerHTML = `<p>${response.length} ${manyWords}:</p><p id="words">${wordList.join('<br>')}</p>`
             }
         })
 })
